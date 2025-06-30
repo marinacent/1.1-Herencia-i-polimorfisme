@@ -1,11 +1,18 @@
 public class Car {
-    private static final String brand;
+    private static final String brand = "Audi";
     private static String model;
     private final int power;
 
-    public Car(String brand, String model, int power) {
-        this.brand = brand;
+    public Car(String model, int power) {
         this.model = model;
         this.power = power;
+    }
+
+    public static String getModel() {
+        return model;
+    }
+
+    public int getPower() {
+        return power;
     }
 }
