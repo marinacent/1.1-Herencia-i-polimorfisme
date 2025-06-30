@@ -1,11 +1,15 @@
 public class WindInstrument extends Instrument{
 
+    static {
+        System.out.println("Class 'WindInstrument' loaded");
+    }
+
     WindInstrument(String name, double price) {
         super(name, price);
     }
 
     public void play() {
-        System.out.println("Està sonant un instrument de vent");
+        System.out.println("A wind instrument is playing");
     }
 
 }

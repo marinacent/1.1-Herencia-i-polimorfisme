@@ -1,10 +1,14 @@
 public class PercussionInstrument extends Instrument {
 
+    static {
+        System.out.println("Class 'PercussionInstrument' loaded");
+    }
+
     PercussionInstrument(String name, double price) {
         super(name, price);
     }
 
     public void play() {
-        System.out.println("Està sonant un instrument de percussió");
+        System.out.println("A percussion instrument is playing");
     }
 }
