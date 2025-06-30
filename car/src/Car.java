@@ -3,9 +3,12 @@ public class Car {
     private static String model;
     private final int power;
 
-    public Car(String model, int power) {
-        this.model = model;
+    public Car(int power) {
         this.power = power;
+    }
+
+    public static void setModel(String model) {
+        Car.model = model;
     }
 
     public static String getModel() {
