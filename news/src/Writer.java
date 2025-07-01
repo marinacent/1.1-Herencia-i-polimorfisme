@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 
 public class Writer {
-    // nom, dni i sou
     private String name;
     private final int dni;
     private static int salary = 1500;
-    private ArrayList<NewsReport> writerNews = new ArrayList<>;
+    private ArrayList<NewsReport> writerNews;
+
+    Writer(String name, int dni) {
+        this.name = name;
+        this.dni = dni;
+        this.writerNews = new ArrayList<>();
+    }
+
 }
