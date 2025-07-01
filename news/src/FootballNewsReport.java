@@ -30,7 +30,7 @@ public class FootballNewsReport extends NewsReport {
         this.score = score;
     }
 
-    public static FootballNewsReport createNewsReport() {
+    public static NewsReport createNewsReport() {
         System.out.println("Enter headline: ");
         String headline = input.nextLine();
         System.out.println("Enter club: ");
@@ -39,7 +39,9 @@ public class FootballNewsReport extends NewsReport {
         String player = input.nextLine().toLowerCase();
         System.out.println("Enter competition: ");
         String competition = input.nextLine().toLowerCase();
-        return new FootballNewsReport(headline, club, player, competition);
+        NewsReport report = new FootballNewsReport(headline, club, player, competition);
+        NewsReport.newsList.add(report);
+        return report;
     }
 
 }

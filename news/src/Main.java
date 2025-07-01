@@ -15,6 +15,8 @@ public class Main {
             System.out.println("3  Add news report to writer");
             System.out.println("4  Delete news report");
             System.out.println("5  Show writer news");
+            System.out.println("6  Compute report score");
+            System.out.println("7  Compute report price");
             System.out.println("8  Exit");
 
             while (!input.hasNextInt()) {
@@ -77,6 +79,29 @@ public class Main {
 
                 case 5:
                     Writer.showReports();
+                    break;
+
+                case 6:
+                    NewsReport newsReport = NewsReport.findNewsReport();
+                    if (newsReport != null) {
+                        newsReport.computeNewsReportScore();
+                        System.out.println("The score is " + newsReport.getScore());
+                        break;
+                    }
+                    System.out.println("News report not found");
+                    break;
+
+                case 7:
+                    NewsReport reportForPrice = NewsReport.findNewsReport();
+                    if (reportForPrice != null) {
+                        reportForPrice.computeNewsReportScore();
+                        System.out.println("The score is " + reportForPrice.getScore());
+                        break;
+                    }
+                    System.out.println("News report not found");
+                    break;
+
+
 
             }
         } while (option != 8);

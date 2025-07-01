@@ -25,13 +25,15 @@ public class TennisNewsReport extends NewsReport {
         this.score = score;
     }
 
-    public static TennisNewsReport createNewsReport() {
+    public static NewsReport createNewsReport() {
         System.out.println("Enter headline: ");
         String headline = input.nextLine();
         System.out.println("Enter player: ");
         String player = input.nextLine().toLowerCase();
         System.out.println("Enter competition: ");
         String competition = input.nextLine().toLowerCase();
-        return new TennisNewsReport(headline, competition, player);
+        NewsReport report = new TennisNewsReport(headline, competition, player);
+        NewsReport.newsList.add(report);
+        return report;
     }
 }

@@ -18,11 +18,13 @@ public class MotorcycleRacingNewsReport extends NewsReport {
         this.score = score;
     }
 
-    public static MotorcycleRacingNewsReport createNewsReport() {
+    public static NewsReport createNewsReport() {
         System.out.println("Enter headline: ");
         String headline = input.nextLine();
         System.out.println("Enter team: ");
         String team = input.nextLine().toLowerCase();
-        return new MotorcycleRacingNewsReport(headline, team);
+        NewsReport report = new MotorcycleRacingNewsReport(headline, team);
+        NewsReport.newsList.add(report);
+        return report;
     }
 }
