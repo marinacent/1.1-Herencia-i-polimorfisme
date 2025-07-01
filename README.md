@@ -30,11 +30,11 @@ Clone repository: -> git clone
 
 Acces project repository: cd 1.1-Herencia-i-polimorfisme
 
-Each exercise is a separate project (I tried to fix it but it was too complicated for me. I'll put everything in the same project next time)
+Each exercise is a separate project (I tried to fix it but it was too complicated for me. I'll put everything in the same project next time).
 
 
 ▶️ Run
 
 
-Open each project in your IDE and run the Main file
+Open each project in your IDE and run the Main file.
 
