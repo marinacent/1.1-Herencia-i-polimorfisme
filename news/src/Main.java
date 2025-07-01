@@ -35,7 +35,7 @@ public class Main {
                     break;
                 case 3:
                     NewsReport report = null;
-                    System.out.println("Select news report type: " +
+                    System.out.println("Select news report type: \n" +
                             "1  Football\n" +
                             "2  Basketball\n" +
                             "3  Tennis\n" +

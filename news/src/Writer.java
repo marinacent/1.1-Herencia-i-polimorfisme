@@ -74,11 +74,7 @@ public class Writer {
         String dni = input.nextLine();
         for (Writer writer : writerList) {
             if (writer.dni.equals(dni)) {
-                for (NewsReport report : writer.writerNews) {
-                    if (report.headline.equals(headline)) {
-                        writer.writerNews.remove(report);
-                    }
-                }
+                writer.writerNews.removeIf(report -> report.headline.equals(headline));
             }
         }
 
