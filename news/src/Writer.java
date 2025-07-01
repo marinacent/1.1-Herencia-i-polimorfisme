@@ -6,7 +6,7 @@ public class Writer {
     private final String dni;
     private static int salary = 1500;
     public ArrayList<NewsReport> writerNews;
-    private static ArrayList<Writer> writerList;
+    private static ArrayList<Writer> writerList = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
 
     Writer(String name, String dni) {
@@ -29,12 +29,7 @@ public class Writer {
         System.out.println("Enter writer's DNI:");
         String dni = input.nextLine();
         Writer writer = new Writer(name, dni);
-        if (Writer.writerList != null) {
             Writer.writerList.add(writer);
-        } else {
-            Writer.writerList = new ArrayList<Writer>();
-            writerList.add(writer);
-        }
         System.out.println("New writer created. Name: "
                 + writer.getName() + ". DNI: " + writer.getDni());
     }
@@ -43,12 +38,17 @@ public class Writer {
     public static void deleteWriter() {
         System.out.println("Enter writer's DNI: ");
         String dni = input.nextLine();
+        boolean writerFound = false;
         for (Writer writer : writerList) {
             if (writer.dni.equals(dni)) {
                 System.out.println("Deleting writer with name " + writer.name + " and DNI " + writer.dni);
                 writerList.remove(writer);
+                writerFound = true;
                 break;
             }
+        }
+        if (!writerFound) {
+            System.out.println("Writer not found");
         }
     }
 
