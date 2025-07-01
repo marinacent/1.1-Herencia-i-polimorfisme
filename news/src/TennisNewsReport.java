@@ -8,4 +8,12 @@ public class TennisNewsReport extends NewsReport {
         this.competition = competition;
         this.player = player;
     }
+
+    public void computeNewsReportPrice() {
+        int price = 150;
+        if (this.player.equals("federer") || this.player.equals("nadal") || this.player.equals("djokovic")) {
+            price += 100;
+        }
+        this.price = price;
+    }
 }
