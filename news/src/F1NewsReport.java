@@ -12,4 +12,9 @@ public class F1NewsReport extends NewsReport {
         this.price = price;
     }
 
+    public void computeNewsReportScore() {
+        int score = 4;
+        if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { score += 2; }
+    }
+
 }

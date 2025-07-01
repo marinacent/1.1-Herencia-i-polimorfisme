@@ -14,4 +14,15 @@ public class BasketballNewsReport extends NewsReport {
         if (this.club.equals("barça") || this.club.equals("madrid")) { price += 75; }
         this.price = price;
     }
+
+    public void computeNewsReportScore() {
+        int score = 4;
+        if (this.competition.equals("euroleague")) {
+            score += 3;
+        } else if (this.competition.equals("acb")) {
+            score += 2;
+        }
+        if (this.club.equals("barça") || this.club.equals("madrid")) { score += 1; }
+        this.score = score;
+    }
 }

@@ -11,4 +11,10 @@ public class MotorcycleRacingNewsReport extends NewsReport {
         if (this.team.equals("honda") || this.team.equals("yamaha")) { price += 50; }
         this.price = price;
     }
+
+    public void computeNewsReportScore() {
+        int score = 3;
+        if (this.team.equals("honda") || this.team.equals("yamaha")) { score += 3; }
+        this.score = score;
+    }
 }

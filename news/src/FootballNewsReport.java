@@ -17,4 +17,16 @@ public class FootballNewsReport extends NewsReport {
         if (this.player.equals("ferran torres") || this.player.equals("benzema")) { price += 100; }
         this.price = price;
     }
+
+    public void computeNewsReportScore() {
+        int score = 5;
+        if (this.competition.equals("champions league")) {
+            score += 3;
+        } else if (this.competition.equals("la liga")) {
+            score += 2;
+        }
+        if (this.club.equals("barça") || this.club.equals("madrid")) { score += 1; }
+        if (this.player.equals("ferran torres") || this.player.equals("benzema")) { score += 1; }
+        this.score = score;
+    }
 }
