@@ -13,7 +13,8 @@ public class Main {
             System.out.println("1  Add writer");
             System.out.println("2  Delete writer");
             System.out.println("3  Add news report to writer");
-            System.out.println("4 Delete news report");
+            System.out.println("4  Delete news report");
+            System.out.println("5  Show writer news");
             System.out.println("8  Exit");
 
             while (!input.hasNextInt()) {
@@ -68,8 +69,14 @@ public class Main {
                     if (report != null) {
                         Writer.addNewsReport(report);
                     }
+                    break;
+
                 case 4:
                     Writer.deleteNewsReport();
+                    break;
+
+                case 5:
+                    Writer.showReports();
 
             }
         } while (option != 8);

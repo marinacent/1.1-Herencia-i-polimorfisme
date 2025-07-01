@@ -41,6 +41,7 @@ public class Writer {
                 + writer.getName() + ". DNI: " + writer.getDni());
     }
 
+
     public static void deleteWriter() {
         System.out.println("Enter writer's DNI: ");
         String dni = input.nextLine();
@@ -81,6 +82,19 @@ public class Writer {
             }
         }
 
+
+    }
+
+    public static void showReports() {
+        System.out.println("Enter writer's DNI: ");
+        String dni = input.nextLine();
+        for (Writer writer : writerList) {
+            if (writer.dni.equals(dni)) {
+                for (NewsReport report : writer.writerNews) {
+                    System.out.println(report.headline);
+                }
+            }
+        }
 
     }
 
