@@ -1,6 +1,5 @@
 📄 Description
 
-Aquí es detallarà una breu descripció de l'exercici i l'enunciat proporcionat.
 
 Exercise 1 (instruments): creating three types of musical instruments.
 
@@ -11,17 +10,21 @@ Exercise 3 (smartphone): creating a smartphone class using inheritance and inter
 Exercise 4 (news): creating a small program to manage writers and news reports.
 
 
+
 💻 Technologies used
+
 
 Java 21
 
 
 📋 Requirements
 
+
 Java 21
 
 
 🛠️ Set up
+
 
 Clone repository: -> git clone
 
@@ -31,6 +34,7 @@ Each exercise is a separate project (I tried to fix it but it was too complicate
 
 
 ▶️ Run
+
 
 Open each project in your IDE and run the Main file
 
