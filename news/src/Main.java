@@ -30,6 +30,7 @@ public class Main {
                     Writer.deleteWriter();
                     break;
                 case 3:
+                    NewsReport report = null;
                     System.out.println("Select news report type: " +
                             "1  Football" +
                             "2  Basketball" +
@@ -46,27 +47,26 @@ public class Main {
 
                     switch (newsType) {
                         case 1:
-                            NewsReport report1 = FootballNewsReport.createNewsReport();
+                            report = FootballNewsReport.createNewsReport();
                             break;
                         case 2:
-                            NewsReport report2 = BasketballNewsReport.createNewsReport();
+                            report = BasketballNewsReport.createNewsReport();
                             break;
                         case 3:
-                            NewsReport report3 = TennisNewsReport.createNewsReport();
+                            report = TennisNewsReport.createNewsReport();
                             break;
                         case 4:
-                            NewsReport report4 = F1NewsReport.createNewsReport();
+                            report = F1NewsReport.createNewsReport();
                             break;
                         case 5:
-                            NewsReport report5 = MotorcycleRacingNewsReport.createNewsReport();
+                            report = MotorcycleRacingNewsReport.createNewsReport();
                             break;
                         default:
                             System.out.println("Invalid number");
             }
-
-                    System.out.println("Enter writer's DNI: ");
-                    String dni = input.nextLine();
-                    f
+                    if (report != null) {
+                        Writer.addNewsReport(report);
+                    }
 
         } while (option != 8);
     }

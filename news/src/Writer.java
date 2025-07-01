@@ -48,6 +48,18 @@ public class Writer {
         }
     }
 
+    public static void addNewsReport(NewsReport report) {
+        System.out.println("Enter writer's DNI: ");
+        String dni = input.nextLine();
+        for (Writer writer : writerList) {
+            if (writer.dni.equals(dni)) {
+                writer.writerNews.add(report);
+                System.out.println("News report added to writer " + writer.name);
+                break;
+            }
+        }
+    }
+
 
     }
 
