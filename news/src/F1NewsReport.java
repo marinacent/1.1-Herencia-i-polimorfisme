@@ -6,8 +6,6 @@ public class F1NewsReport extends NewsReport {
         this.constructor = constructor;
     }
 
-
-
     public void computeNewsReportPrice() {
         int price = 100;
         if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { price += 50; }
@@ -17,6 +15,7 @@ public class F1NewsReport extends NewsReport {
     public void computeNewsReportScore() {
         int score = 4;
         if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { score += 2; }
+        this.score = score;
     }
 
     public static NewsReport createNewsReport() {

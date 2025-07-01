@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -6,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int option;
-        ArrayList<Writer> writers = new ArrayList<>();
 
         do {
             System.out.println("Pick an option:");
@@ -100,7 +98,6 @@ public class Main {
                     }
                     System.out.println("News report not found");
                     break;
-
 
 
             }

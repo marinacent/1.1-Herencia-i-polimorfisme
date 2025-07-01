@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public abstract class NewsReport {
-    // un titular, un text, una puntuació i un preu
     public String headline;
     private String text;
     protected int score;

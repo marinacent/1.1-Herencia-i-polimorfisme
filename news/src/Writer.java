@@ -6,7 +6,7 @@ public class Writer {
     private final String dni;
     private static int salary = 1500;
     public ArrayList<NewsReport> writerNews;
-    private static ArrayList<Writer> writerList = new ArrayList<>();
+    private static final ArrayList<Writer> writerList = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
 
     Writer(String name, String dni) {
@@ -29,38 +29,39 @@ public class Writer {
         System.out.println("Enter writer's DNI:");
         String dni = input.nextLine();
         Writer writer = new Writer(name, dni);
-            Writer.writerList.add(writer);
+        Writer.writerList.add(writer);
         System.out.println("New writer created. Name: "
                 + writer.getName() + ". DNI: " + writer.getDni());
     }
 
-
-    public static void deleteWriter() {
+    private static Writer findWriter() {
         System.out.println("Enter writer's DNI: ");
         String dni = input.nextLine();
-        boolean writerFound = false;
         for (Writer writer : writerList) {
             if (writer.dni.equals(dni)) {
-                System.out.println("Deleting writer with name " + writer.name + " and DNI " + writer.dni);
-                writerList.remove(writer);
-                writerFound = true;
-                break;
+                return writer;
             }
         }
-        if (!writerFound) {
+        return null;
+    }
+
+
+    public static void deleteWriter() {
+        Writer writer = findWriter();
+        if (writer != null) {
+            System.out.println("Deleting writer with name " + writer.name + " and DNI " + writer.dni);
+            writerList.remove(writer);
+        } else {
             System.out.println("Writer not found");
         }
     }
 
     public static void addNewsReport(NewsReport report) {
-        System.out.println("Enter writer's DNI: ");
-        String dni = input.nextLine();
-        for (Writer writer : writerList) {
-            if (writer.dni.equals(dni)) {
-                writer.writerNews.add(report);
-                System.out.println("News report added to writer " + writer.name);
-                break;
-            }
+        Writer writer = findWriter();
+        if (writer != null) {
+            writer.writerNews.add(report);
+            System.out.println("News report added to writer " + writer.name);
+        } else {
             System.out.println("DNI not found");
         }
     }
@@ -68,29 +69,29 @@ public class Writer {
     public static void deleteNewsReport() {
         System.out.println("Enter report headline: ");
         String headline = input.nextLine();
-        System.out.println("Enter writer's DNI: ");
-        String dni = input.nextLine();
-        for (Writer writer : writerList) {
-            if (writer.dni.equals(dni)) {
-                writer.writerNews.removeIf(report -> report.headline.equals(headline));
+        Writer writer = findWriter();
+        if (writer != null) {
+            boolean reportRemoved = writer.writerNews.removeIf(report ->
+                    report.headline.equals(headline)
+            );
+            if(reportRemoved) {
+                System.out.println("News report deleted: " + headline);
+            } else {
+                System.out.println("News report not found");
             }
+        } else {
+            System.out.println("DNI not found");
         }
-
-
     }
 
     public static void showReports() {
-        System.out.println("Enter writer's DNI: ");
-        String dni = input.nextLine();
-        for (Writer writer : writerList) {
-            if (writer.dni.equals(dni)) {
-                for (NewsReport report : writer.writerNews) {
-                    System.out.println(report.headline);
-                }
+        Writer writer = findWriter();
+        if (writer != null) {
+            for (NewsReport report : writer.writerNews) {
+                System.out.println(report.headline);
             }
+        } else {
+            System.out.println("DNI not found");
         }
-
     }
-
 }
-
