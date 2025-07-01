@@ -30,7 +30,7 @@ Clone repository: -> git clone
 
 Acces project repository: cd 1.1-Herencia-i-polimorfisme
 
-Each exercise is a separate project.
+Each exercise is its own separate project.
 
 
 ▶️ Run
