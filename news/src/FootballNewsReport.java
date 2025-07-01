@@ -29,4 +29,17 @@ public class FootballNewsReport extends NewsReport {
         if (this.player.equals("ferran torres") || this.player.equals("benzema")) { score += 1; }
         this.score = score;
     }
+
+    public static FootballNewsReport createNewsReport() {
+        System.out.println("Enter headline: ");
+        String headline = input.nextLine();
+        System.out.println("Enter club: ");
+        String club = input.nextLine().toLowerCase();
+        System.out.println("Enter player: ");
+        String player = input.nextLine().toLowerCase();
+        System.out.println("Enter competition: ");
+        String competition = input.nextLine().toLowerCase();
+        return new FootballNewsReport(headline, club, player, competition);
+    }
+
 }

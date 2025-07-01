@@ -17,4 +17,12 @@ public class MotorcycleRacingNewsReport extends NewsReport {
         if (this.team.equals("honda") || this.team.equals("yamaha")) { score += 3; }
         this.score = score;
     }
+
+    public static MotorcycleRacingNewsReport createNewsReport() {
+        System.out.println("Enter headline: ");
+        String headline = input.nextLine();
+        System.out.println("Enter team: ");
+        String team = input.nextLine().toLowerCase();
+        return new MotorcycleRacingNewsReport(headline, team);
+    }
 }

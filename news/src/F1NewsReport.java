@@ -17,4 +17,12 @@ public class F1NewsReport extends NewsReport {
         if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { score += 2; }
     }
 
+    public static F1NewsReport createNewsReport() {
+        System.out.println("Enter headline: ");
+        String headline = input.nextLine();
+        System.out.println("Enter constructor: ");
+        String constructor = input.nextLine().toLowerCase();
+        return new F1NewsReport(headline, constructor);
+    }
+
 }

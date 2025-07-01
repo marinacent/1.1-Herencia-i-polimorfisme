@@ -25,4 +25,14 @@ public class BasketballNewsReport extends NewsReport {
         if (this.club.equals("barça") || this.club.equals("madrid")) { score += 1; }
         this.score = score;
     }
+
+    public static BasketballNewsReport createNewsReport() {
+        System.out.println("Enter headline: ");
+        String headline = input.nextLine();
+        System.out.println("Enter club: ");
+        String club = input.nextLine().toLowerCase();
+        System.out.println("Enter competition: ");
+        String competition = input.nextLine().toLowerCase();
+        return new BasketballNewsReport(headline, competition, club);
+    }
 }
