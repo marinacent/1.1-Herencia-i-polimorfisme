@@ -94,8 +94,8 @@ public class Main {
                 case 7:
                     NewsReport reportForPrice = NewsReport.findNewsReport();
                     if (reportForPrice != null) {
-                        reportForPrice.computeNewsReportScore();
-                        System.out.println("The score is " + reportForPrice.getScore());
+                        reportForPrice.computeNewsReportPrice();
+                        System.out.println("The price is " + reportForPrice.getPrice());
                         break;
                     }
                     System.out.println("News report not found");

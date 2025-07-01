@@ -7,8 +7,6 @@ public class Writer {
     private static int salary = 1500;
     public ArrayList<NewsReport> writerNews;
     private static ArrayList<Writer> writerList;
-
-    // ?????
     private static Scanner input = new Scanner(System.in);
 
     Writer(String name, String dni) {
