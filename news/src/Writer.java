@@ -31,7 +31,12 @@ public class Writer {
         System.out.println("Enter writer's DNI:");
         String dni = input.nextLine();
         Writer writer = new Writer(name, dni);
-        Writer.writerList.add(writer);
+        if (Writer.writerList != null) {
+            Writer.writerList.add(writer);
+        } else {
+            Writer.writerList = new ArrayList<Writer>();
+            writerList.add(writer);
+        }
         System.out.println("New writer created. Name: "
                 + writer.getName() + ". DNI: " + writer.getDni());
     }
@@ -57,9 +62,27 @@ public class Writer {
                 System.out.println("News report added to writer " + writer.name);
                 break;
             }
+            System.out.println("DNI not found");
         }
     }
 
+    public static void deleteNewsReport() {
+        System.out.println("Enter report headline: ");
+        String headline = input.nextLine();
+        System.out.println("Enter writer's DNI: ");
+        String dni = input.nextLine();
+        for (Writer writer : writerList) {
+            if (writer.dni.equals(dni)) {
+                for (NewsReport report : writer.writerNews) {
+                    if (report.headline.equals(headline)) {
+                        writer.writerNews.remove(report);
+                    }
+                }
+            }
+        }
+
 
     }
+
+}
 

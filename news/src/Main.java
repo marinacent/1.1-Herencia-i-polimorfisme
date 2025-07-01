@@ -13,6 +13,7 @@ public class Main {
             System.out.println("1  Add writer");
             System.out.println("2  Delete writer");
             System.out.println("3  Add news report to writer");
+            System.out.println("4 Delete news report");
             System.out.println("8  Exit");
 
             while (!input.hasNextInt()) {
@@ -32,10 +33,10 @@ public class Main {
                 case 3:
                     NewsReport report = null;
                     System.out.println("Select news report type: " +
-                            "1  Football" +
-                            "2  Basketball" +
-                            "3  Tennis" +
-                            "4  F1" +
+                            "1  Football\n" +
+                            "2  Basketball\n" +
+                            "3  Tennis\n" +
+                            "4  F1\n" +
                             "5  Motorcycle racing");
 
                     while (!input.hasNextInt()) {
@@ -63,11 +64,15 @@ public class Main {
                             break;
                         default:
                             System.out.println("Invalid number");
-            }
+                    }
                     if (report != null) {
                         Writer.addNewsReport(report);
                     }
+                case 4:
+                    Writer.deleteNewsReport();
 
+            }
         } while (option != 8);
     }
+
 }
