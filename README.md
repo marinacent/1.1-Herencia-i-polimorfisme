@@ -28,7 +28,7 @@ Java 21
 
 Clone repository: -> git clone
 
-Acces project repository: cd 1.1-Herencia-i-polimorfisme
+Access project repository: cd 1.1-Herencia-i-polimorfisme
 
 Each exercise is its own separate project.
 

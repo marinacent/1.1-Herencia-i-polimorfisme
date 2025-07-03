@@ -6,12 +6,14 @@ public class F1NewsReport extends NewsReport {
         this.constructor = constructor;
     }
 
+    @Override
     public void computeNewsReportPrice() {
         int price = 100;
         if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { price += 50; }
         this.price = price;
     }
 
+    @Override
     public void computeNewsReportScore() {
         int score = 4;
         if (this.constructor.equals("ferrari") || this.constructor.equals("mercedes")) { score += 2; }

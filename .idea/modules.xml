@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/1.1-Herencia-i-polimorfisme.iml" filepath="$PROJECT_DIR$/.idea/1.1-Herencia-i-polimorfisme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/car/car.iml" filepath="$PROJECT_DIR$/car/car.iml" />
+      <module fileurl="file://$PROJECT_DIR$/instruments/instruments.iml" filepath="$PROJECT_DIR$/instruments/instruments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/news/news.iml" filepath="$PROJECT_DIR$/news/news.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartphone/smartphone.iml" filepath="$PROJECT_DIR$/smartphone/smartphone.iml" />
+    </modules>
+  </component>
+</project>

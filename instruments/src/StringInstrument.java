@@ -8,6 +8,7 @@ public class StringInstrument extends Instrument {
         super(name, price);
     }
 
+    @Override
     public void play() {
         System.out.println("A string instrument is playing");
     }

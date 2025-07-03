@@ -1,10 +1,10 @@
 public class Car {
-    private static final String brand = "Audi";
+    private static final String BRAND = "Audi";
     private static String model;
-    private final int power;
+    private final int POWER;
 
     public Car(int power) {
-        this.power = power;
+        this.POWER = power;
     }
 
     public static void setModel(String model) {
@@ -15,8 +15,8 @@ public class Car {
         return model;
     }
 
-    public int getPower() {
-        return power;
+    public int getPOWER() {
+        return POWER;
     }
 
     public static void brake() {

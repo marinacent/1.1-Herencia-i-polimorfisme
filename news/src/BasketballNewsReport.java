@@ -8,6 +8,7 @@ public class BasketballNewsReport extends NewsReport {
         this.club = club;
     }
 
+    @Override
     public void computeNewsReportPrice() {
         int price = 250;
         if (this.competition.equals("euroleague")) { price += 75; }
@@ -15,6 +16,7 @@ public class BasketballNewsReport extends NewsReport {
         this.price = price;
     }
 
+    @Override
     public void computeNewsReportScore() {
         int score = 4;
         if (this.competition.equals("euroleague")) {

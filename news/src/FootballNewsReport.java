@@ -10,6 +10,7 @@ public class FootballNewsReport extends NewsReport {
         this.competition = competition;
     }
 
+    @Override
     public void computeNewsReportPrice() {
         int price = 300;
         if (this.competition.equals("champions league")) { price += 100; }
@@ -18,6 +19,7 @@ public class FootballNewsReport extends NewsReport {
         this.price = price;
     }
 
+    @Override
     public void computeNewsReportScore() {
         int score = 5;
         if (this.competition.equals("champions league")) {

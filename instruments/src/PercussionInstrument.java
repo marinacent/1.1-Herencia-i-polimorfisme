@@ -8,6 +8,7 @@ public class PercussionInstrument extends Instrument {
         super(name, price);
     }
 
+    @Override
     public void play() {
         System.out.println("A percussion instrument is playing");
     }
