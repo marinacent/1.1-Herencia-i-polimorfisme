@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58188cf4-98d5-4e7a-97cd-ccd2d6e859a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/instruments/PercussionInstrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/instruments/PercussionInstrument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/instruments/StringInstrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/instruments/StringInstrument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/instruments/WindInstrument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/instruments/WindInstrument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/BasketballNewsReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/BasketballNewsReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/F1NewsReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/F1NewsReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/FootballNewsReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/FootballNewsReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/MotorcycleRacingNewsReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/MotorcycleRacingNewsReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/news/TennisNewsReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/news/TennisNewsReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/smartphone/Smartphone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/smartphone/Smartphone.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2zKdN4RZO4ARwWNHuBTjUXYmDuD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/marina/Documents/it-academy/1.1-Herencia-i-polimorfisme"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58188cf4-98d5-4e7a-97cd-ccd2d6e859a4" name="Changes" comment="" />
+      <created>1751483656435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751483656435</updated>
+    </task>
+    <servers />
+  </component>
+</project>
