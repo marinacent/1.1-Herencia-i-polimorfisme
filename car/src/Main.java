@@ -6,8 +6,8 @@ public class Main {
         Car.setModel("A3");
 
 //        System.out.println("Final --> unique for each instance");
-        System.out.println("My car: " + myCar.getPOWER());
-        System.out.println("Your car: " + yourCar.getPOWER());
+        System.out.println("My car: " + myCar.getPower());
+        System.out.println("Your car: " + yourCar.getPower());
 
 //        System.out.println("\nStatic --> shared by all instances");
         System.out.println("All cars: " + Car.getModel());
